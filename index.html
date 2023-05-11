@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Starter template for small or static websites." />
+		<link rel="icon" type="image/png" href="/assets/favicon.png" />
+		<title>HTML+TailwindCSS+Vite Starter</title>
+	</head>
+	<body>
+		<div class="app" id="app">
+			<div class="panel">
+					<label for="selectedSeat">Asiento seleccionado:</label>
+					<input id="selectedSeat" type="text" readonly>
+					<label for="customAttribute">Atributo personalizado:</label>
+					<input id="customAttribute" type="text" placeholder="Nombre del atributo">
+					<label for="customAttributeValue">Valor del atributo personalizado:</label>
+					<input id="customAttributeValue" type="text" placeholder="Valor del atributo">
+					<button id="applyAttribute">Aplicar atributo</button>
+			</div>
+			<div id="seatsContainer"></div>
+		</div>
+		<script type="module" src="/main.js"></script>
+	</body>
+</html>
