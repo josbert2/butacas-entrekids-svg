@@ -7,18 +7,67 @@
 		<link rel="icon" type="image/png" href="/assets/favicon.png" />
 		<title>HTML+TailwindCSS+Vite Starter</title>
 	</head>
-	<body>
+	<body class="dark">
 		<div class="app" id="app">
-			<div class="panel">
-					<label for="selectedSeat">Asiento seleccionado:</label>
-					<input id="selectedSeat" type="text" readonly>
-					<label for="customAttribute">Atributo personalizado:</label>
-					<input id="customAttribute" type="text" placeholder="Nombre del atributo">
-					<label for="customAttributeValue">Valor del atributo personalizado:</label>
-					<input id="customAttributeValue" type="text" placeholder="Valor del atributo">
-					<button id="applyAttribute">Aplicar atributo</button>
+			
+
+			<div class="container px-1 py-4 mx-auto">
+				<div class="grid grid-cols-5 gap-6">
+					<div class="col-span-3">
+						<div id="seatsContainer"></div>
+					</div>
+					<div class="col-span-2">
+						<div class="px-5 py-3 panel c-lesPJm c-lesPJm-iiMVmrZ-css">
+							<div class="mb-6">
+								<label for="selectedSeat" class="text-[#ededede7] mb-2 flex  font font-medium text-[16px]">Asiento seleccionado:</label>
+								<div class="w-full">
+									<div class="c-lesPJm-ihfqheP-css">
+										<input id="selectedSeat" class="w-full c-lesPJm-idOSFy-css" type="text" readonly placeholder="selecciona un asiento">
+									</div>
+								</div>
+							</div>
+
+							<div class="mb-6">
+								<label for="customAttribute" class="text-[#ededede7] mb-2 flex  font font-medium text-[16px]">Atributo personalizado:</label>
+								<div class="w-full">
+									<div class="c-lesPJm-ihfqheP-css">
+										<input id="customAttribute" class="w-full c-lesPJm-idOSFy-css" type="text" placeholder="Nombre del atributo">
+									</div>
+								</div>
+							</div>
+
+							<div class="mb-6">
+								<label for="customAttributeValue" class="text-[#ededede7] mb-2 flex  font font-medium text-[16px]">Valor del atributo personalizado:</label>
+								<div class="w-full">
+									<div class="c-lesPJm-ihfqheP-css">
+										<input id="customAttributeValue" class="w-full c-lesPJm-idOSFy-css" type="text" placeholder="Valor del atributo">
+									</div>
+								</div>
+							</div>
+							
+							
+							<div class="flex mb-3">
+								<button id="applyAttribute" class="c-lesPJm-iiMVmrZ-css-button">Aplicar atributo</button>
+							</div>
+							<div class="flex mb-3">
+								<button id="deleteSeat" class=" c-lesPJm-iiMVmrZ-css-button danger">Eliminar asiento</button>
+							</div>
+							
+							
+							<div class="flex gap-5">
+								<button id="addRowButton" class="c-lesPJm-iiMVmrZ-css-button">Agregar Fila</button>
+								<button id="addColumnButton" class="c-lesPJm-iiMVmrZ-css-button">Agregar Columna</button>
+							</div>
+							
+							
+							
+							
+						</div>
+					</div>
+				</div>
 			</div>
-			<div id="seatsContainer"></div>
+			
+			
 		</div>
 		<script type="module" src="/main.js"></script>
 	</body>

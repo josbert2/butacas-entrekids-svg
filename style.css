@@ -1,5 +1,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
-
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0px;
+    -webkit-font-smoothing: antialiased;
+}
+.dark {
+    --colors-gray1: hsl(0 0% 8.5%);
+    --colors-gray2: hsl(0 0% 11.0%);
+    --colors-gray3: hsl(0 0% 13.6%);
+    --colors-gray4: hsl(0 0% 15.8%);
+    --colors-gray5: hsl(0 0% 17.9%);
+    --colors-gray6: hsl(0 0% 20.5%);
+    --colors-gray7: hsl(0 0% 24.3%);
+    --colors-gray8: hsl(0 0% 31.2%);
+    --colors-gray9: hsl(0 0% 43.9%);
+    --colors-gray10: hsl(0 0% 49.4%);
+    --colors-gray11: hsl(0 0% 62.8%);
+    --colors-gray12: hsl(0 0% 93.0%);
+    --colors-grayA1: hsl(0 0% 100% / 0);
+    --colors-grayA2: hsl(0 0% 100% / 0.026);
+    --colors-grayA3: hsl(0 0% 100% / 0.056);
+    --colors-grayA4: hsl(0 0% 100% / 0.077);
+    --colors-grayA5: hsl(0 0% 100% / 0.103);
+    --colors-grayA6: hsl(0 0% 100% / 0.129);
+    --colors-grayA7: hsl(0 0% 100% / 0.172);
+    --colors-grayA8: hsl(0 0% 100% / 0.249);
+    --colors-grayA9: hsl(0 0% 100% / 0.386);
+    --colors-grayA10: hsl(0 0% 100% / 0.446);
+    --colors-grayA11: hsl(0 0% 100% / 0.592);
+    --colors-grayA12: hsl(0 0% 100% / 0.923);
+    --colors-blue1: hsl(212 35.0% 9.2%);
+    --colors-blue2: hsl(216 50.0% 11.8%);
+    --colors-blue3: hsl(214 59.4% 15.3%);
+    --colors-blue4: hsl(214 65.8% 17.9%);
+    --colors-blue5: hsl(213 71.2% 20.2%);
+    --colors-blue6: hsl(212 77.4% 23.1%);
+    --colors-blue7: hsl(211 85.1% 27.4%);
+    --colors-blue8: hsl(211 89.7% 34.1%);
+    --colors-blue9: hsl(206 100% 50.0%);
+    --colors-blue10: hsl(209 100% 60.6%);
+    --colors-blue11: hsl(210 100% 66.1%);
+    --colors-blue12: hsl(206 98.0% 95.8%);
+    --colors-green1: hsl(146 30.0% 7.4%);
+    --colors-green2: hsl(155 44.2% 8.4%);
+    --colors-green3: hsl(155 46.7% 10.9%);
+    --colors-green4: hsl(154 48.4% 12.9%);
+    --colors-green5: hsl(154 49.7% 14.9%);
+    --colors-green6: hsl(154 50.9% 17.6%);
+    --colors-green7: hsl(153 51.8% 21.8%);
+    --colors-green8: hsl(151 51.7% 28.4%);
+    --colors-green9: hsl(151 55.0% 41.5%);
+    --colors-green10: hsl(151 49.3% 46.5%);
+    --colors-green11: hsl(151 50.0% 53.2%);
+    --colors-green12: hsl(137 72.0% 94.0%);
+    --colors-amber1: hsl(36 100% 6.1%);
+    --colors-amber2: hsl(35 100% 7.6%);
+    --colors-amber3: hsl(32 100% 10.2%);
+    --colors-amber4: hsl(32 100% 12.4%);
+    --colors-amber5: hsl(33 100% 14.6%);
+    --colors-amber6: hsl(35 100% 17.1%);
+    --colors-amber7: hsl(35 91.0% 21.6%);
+    --colors-amber8: hsl(36 100% 25.5%);
+    --colors-amber9: hsl(39 100% 57.0%);
+    --colors-amber10: hsl(43 100% 64.0%);
+    --colors-amber11: hsl(39 90.0% 49.8%);
+    --colors-amber12: hsl(39 97.0% 93.2%);
+    --colors-red1: hsl(353 23.0% 9.8%);
+    --colors-red2: hsl(357 34.4% 12.0%);
+    --colors-red3: hsl(356 43.4% 16.4%);
+    --colors-red4: hsl(356 47.6% 19.2%);
+    --colors-red5: hsl(356 51.1% 21.9%);
+    --colors-red6: hsl(356 55.2% 25.9%);
+    --colors-red7: hsl(357 60.2% 31.8%);
+    --colors-red8: hsl(358 65.0% 40.4%);
+    --colors-red9: hsl(358 75.0% 59.0%);
+    --colors-red10: hsl(358 85.3% 64.0%);
+    --colors-red11: hsl(358 100% 69.5%);
+    --colors-red12: hsl(351 89.0% 96.0%);
+    --colors-blueA1: hsl(0 0% 0% / 0);
+    --colors-blueA2: hsl(221 97.8% 52.4% / 0.059);
+    --colors-blueA3: hsl(215 99.3% 54.2% / 0.135);
+    --colors-blueA4: hsl(215 99.3% 53.8% / 0.198);
+    --colors-blueA5: hsl(213 99.4% 52.8% / 0.252);
+    --colors-blueA6: hsl(212 99.9% 51.7% / 0.323);
+    --colors-blueA7: hsl(211 100% 50.7% / 0.435);
+    --colors-blueA8: hsl(211 99.8% 50.9% / 0.597);
+    --colors-blueA9: hsl(205 100% 50.0% / 0.980);
+    --colors-blueA10: hsl(208 100% 60.7% / 0.980);
+    --colors-blueA11: hsl(209 100% 66.3% / 0.980);
+    --colors-blueA12: hsl(196 100% 96.8% / 0.980);
+    --colors-bg: #000;
+    --colors-lowContrast: black;
+    --colors-highContrast: white;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,7 +103,81 @@
 	}
 
 	body {
-		@apply font-ubuntu text-neutral-800 antialiased antialiased text-slate-500 dark:text-slate-400 bg-white dark:bg-slate-900;
+		@apply antialiased bg-white font-ubuntu text-neutral-800 text-slate-500 dark:text-slate-400 dark:bg-slate-900;
 		background-color: hsl(0 0% 8.5%);
 	}
+}
+
+svg text{
+	color: #ededede5;
+	font-size: 16px;
+}
+
+svg rect{
+	cursor: pointer;
+}
+#seatsContainer text{
+        fill:#fff;
+}
+
+
+.c-lesPJm-idOSFy-css {
+    width: 100%;
+    height: 100%;
+    padding-right: 16px;
+    padding-left: 15px;
+    font-size: 16px;
+    border-radius: inherit;
+    outline: none;
+    border: 1px solid var(--colors-gray4);
+    caret-color: transparent;
+    line-height: 40px;
+	background-color: transparent;
+}
+.c-lesPJm-ihfqheP-css {
+    height: 54px;
+    width: 100%;
+    position: relative;
+    background: #222222;
+    border-radius: 6px;
+    outline: 0px;
+    box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 2px, rgba(0, 0, 0, 0.05) 0px 3px 6px -3px, rgba(0, 0, 0, 0.05) 0px 2px 4px -2px, rgba(0, 0, 0, 0.05) 0px 1px 2px -1px, rgba(0, 0, 0, 0.05) 0px 1px 1px -1px, rgba(0, 0, 0, 0.05) 0px 1px 0px -1px;
+}
+.c-lesPJm-idOSFy-css::placeholder {
+    color: #6d6d6d;
+}
+.c-lesPJm-iiMVmrZ-css {
+    
+    border: 1px solid var(--colors-gray4);
+    border-radius: 12px;
+
+    background: var(--colors-gray2);
+    overflow: hidden;
+    position: relative;
+    user-select: none;
+}
+
+.c-lesPJm-iiMVmrZ-css-button{
+	    
+    border: 1px solid var(--colors-gray4);
+    border-radius: 12px;
+	color: #6d6d6d;
+	text-transform: uppercase;
+	font-weight: 500;
+    background: var(--colors-gray2);
+    overflow: hidden;
+    position: relative;
+    user-select: none;
+	height: 44px;
+    width: 100%;
+    position: relative;
+    background: #222222;
+    border-radius: 6px;
+    outline: 0px;
+    box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 2px, rgba(0, 0, 0, 0.05) 0px 3px 6px -3px, rgba(0, 0, 0, 0.05) 0px 2px 4px -2px, rgba(0, 0, 0, 0.05) 0px 1px 2px -1px, rgba(0, 0, 0, 0.05) 0px 1px 1px -1px, rgba(0, 0, 0, 0.05) 0px 1px 0px -1px;
+	
+}
+.c-lesPJm-iiMVmrZ-css-button.danger{
+	background: var(--colors-red5);
+	color: var(--colors-highContrast);
 }
